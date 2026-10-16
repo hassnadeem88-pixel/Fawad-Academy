@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --color-fast-gold: #F5BA31;
+    --color-fast-gold-hover: #E5A820;
+    --color-fast-dark: #0B111E;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #0B111E;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbars for FAST academy dark-gold palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B111E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F2D44;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F5BA31;
+}
+
+.tabular-numbers {
+  font-variant-numeric: tabular-nums;
+}
